@@ -1,0 +1,316 @@
+.cart_totals {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: animatemodal 0.3s ease-in;
+          animation: animatemodal 0.3s ease-in;
+  font-family: "Avant Garde Gothic C";
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .cart_totals h2 {
+    margin-right: 28px; }
+    .cart_totals h2 svg {
+      color: #50b848;
+      vertical-align: middle;
+      margin-right: 10px; }
+  .cart_totals h3 {
+    margin-top: 117px;
+    margin-bottom: 45px;
+    text-align: center; }
+  .cart_totals h4 {
+    margin-top: 131px;
+    margin-bottom: 35px;
+    text-align: center; }
+
+.cart_totals-overlay {
+  background-color: #fff;
+  margin-top: 176px; }
+  .cart_totals-overlay > .wrapper {
+    position: relative;
+    max-width: 1366px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 137px; }
+
+.close {
+  position: absolute;
+  right: 2.4%;
+  top: 1%;
+  width: 32px;
+  height: 32px;
+  opacity: 0.51;
+  cursor: pointer; }
+
+.close:hover {
+  opacity: 1; }
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 35px;
+  width: 5px;
+  background-color: #000000; }
+
+.close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.review-order {
+  margin-top: 77px; }
+
+.review-order-table {
+  max-width: 482px;
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse; }
+  .review-order-table caption {
+    color: #3d3d3d;
+    font-family: "Avant Garde Gothic ITC - Dm";
+    font-size: 22px;
+    margin-bottom: 34px; }
+
+td {
+  color: #282828;
+  font-family: "Avant Garde Gothic C";
+  font-size: 15px;
+  padding: 7px 0; }
+
+.product-name b {
+  margin-left: 5px; }
+
+.product-total {
+  width: 19%;
+  text-align: center; }
+
+.product-remove {
+  width: 5%; }
+
+.cart_item:last-child > td {
+  padding-bottom: 11px; }
+
+.cart_item:last-child > .product-total {
+  border-bottom: 1px solid #000; }
+
+.cart_item:last-child > .product-remove {
+  border-bottom: 1px solid #000; }
+
+.discount td {
+  color: #ed1c24;
+  font-size: 11px;
+  padding-bottom: 3px; }
+
+.discount .discount-text {
+  text-align: right;
+  padding-top: 0; }
+
+.discount .discount-order {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 10px; }
+  .discount .discount-order b {
+    width: 95%;
+    display: block;
+    border-bottom: 2px solid #ed1c24;
+    margin-left: auto;
+    line-height: 1.3; }
+
+.order-subtotal td {
+  padding-top: 21px;
+  text-align: right; }
+
+.order-total td {
+  padding-top: 10px;
+  text-align: right; }
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: center; }
+
+input::-webkit-input-placeholder {
+  color: #8d8d8d;
+  font-family: "Avant Garde Gothic C";
+  font-size: 13px;
+  text-align: center; }
+
+input::-moz-placeholder {
+  color: #8d8d8d;
+  font-family: "Avant Garde Gothic C";
+  font-size: 13px;
+  text-align: center; }
+
+input:-ms-input-placeholder {
+  color: #8d8d8d;
+  font-family: "Avant Garde Gothic C";
+  font-size: 13px;
+  text-align: center; }
+
+input:-moz-placeholder {
+  color: #8d8d8d;
+  font-family: "Avant Garde Gothic C";
+  font-size: 13px;
+  text-align: center; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+.customer_name,
+.customer_text {
+  max-width: 487px;
+  width: 100%;
+  margin: auto; }
+  .customer_name input,
+  .customer_text input {
+    width: 100%;
+    line-height: 1.5; }
+
+.customer_text {
+  margin-top: 40px; }
+
+.delivery {
+  max-width: 583px;
+  width: 100%;
+  margin: auto; }
+
+.delivery-address {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.delivery-address > label {
+  color: #8d8d8d;
+  font-family: "Avant Garde Gothic C";
+  font-size: 12px; }
+
+#select-city {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../img/caret-down.svg");
+  background-size: 7px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding-right: 12px;
+  border: none;
+  font-family: "Avant Garde Gothic C";
+  font-size: 15px; }
+  #select-city option {
+    color: #282828;
+    font-family: "Avant Garde Gothic C"; }
+
+#delivery_street {
+  width: 233px;
+  border-bottom: 2px solid #000;
+  text-align: center; }
+
+#delivery_house {
+  width: 72px;
+  border-bottom: 2px solid #000;
+  text-align: center; }
+
+#delivery_flat {
+  width: 72px;
+  border-bottom: 2px solid #000;
+  text-align: center; }
+
+.delivery-comment {
+  margin-top: 10px; }
+  .delivery-comment input {
+    width: 100%;
+    margin-top: 25px; }
+
+#delivery_comment {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000; }
+
+.cost-delivery {
+  color: #3d3d3d;
+  font-family: "Avant Garde Gothic ITC - Dm";
+  font-size: 18px;
+  margin: 48px 0 154px;
+  text-align: center; }
+
+.payment_methods {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: -10px;
+  margin-left: 16px;
+  text-align: center; }
+  .payment_methods li {
+    cursor: pointer;
+    color: #8d8d8d;
+    font-family: "Avant Garde Gothic ITC - Dm";
+    font-size: 18px;
+    padding: 13px 26px 10px; }
+    .payment_methods li:hover {
+      color: #3d3d3d;
+      text-decoration: underline; }
+    .payment_methods li:active {
+      color: #3d3d3d;
+      text-decoration: underline; }
+    .payment_methods li label {
+      cursor: pointer; }
+    .payment_methods li:first-child {
+      border-right: 1px solid #000; }
+  .payment_methods input {
+    display: none; }
+    .payment_methods input:checked + label {
+      color: #3d3d3d;
+      text-decoration: underline; }
+
+.total-cost {
+  color: #40413c;
+  font-family: "Avant Garde Gothic ITC - Dm";
+  font-size: 33px;
+  font-weight: 400;
+  margin: 111px 0 37px;
+  text-align: center; }
+
+.submit-form {
+  text-align: center;
+  margin-top: 37px; }
+  .submit-form .btn {
+    padding: 15px 68px; }
+
+#order-submit {
+  border: none; }
+
+@-webkit-keyframes animatemodal {
+  from {
+    top: 600px;
+    opacity: 0; }
+  to {
+    top: 200px;
+    opacity: 1; } }
+
+@keyframes animatemodal {
+  from {
+    top: 600px;
+    opacity: 0; }
+  to {
+    top: 200px;
+    opacity: 1; } }
